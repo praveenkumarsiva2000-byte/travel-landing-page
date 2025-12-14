@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #444;
+}
+
+:root {
+    --orange: #fa7436;
+    --dark: #222;
+    --gray: #666;
+    --light: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* HEADER */
+.header {
+    border-bottom: 1px solid #eee;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.auth {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* BUTTONS */
+.btn {
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    padding: 12px 28px;
+    border-radius: 6px;
+}
+
+/* HERO */
+.hero {
+    padding: 80px 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-family: "Volkhov", serif;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.hero-text span {
+    color: var(--orange);
+}
+
+.hero-text p {
+    margin: 20px 0;
+    color: var(--gray);
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+/* SEARCH */
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.fa-chevron-down:before {
+    content: "\f078";
+    color: #fa7436;
+}
+
+.search-bar {
+    background: #fff;
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.search-item h4 {
+    font-weight: 500;
+}
+
+.search-item p {
+    font-size: 14px;
+    color: #777;
+}
+
+.divider {
+    width: 1px;
+    background: #e5e5e5;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 0;
+}
+
+.light {
+    background: var(--light);
+}
+
+.section span {
+    color: var(--orange);
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.card i {
+    font-size: 32px;
+    color: var(--orange);
+    margin-bottom: 15px;
+}
+
+/* DEALS */
+.deals {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.deal img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* BLOG */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.blog img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* SUBSCRIBE */
+.subscribe {
+    padding: 80px 0;
+}
+
+.subscribe-box {
+    background: var(--orange);
+    color: white;
+    padding: 60px;
+    border-radius: 16px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.subscribe-form input {
+    padding: 12px;
+    width: 280px;
+    border: none;
+    border-radius: 6px 0 0 6px;
+}
+
+.subscribe-form button {
+    border-radius: 0 6px 6px 0;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--light);
+    padding: 60px 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer a {
+    display: block;
+    margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .hero-grid,
+    .search-bar,
+    .cards,
+    .deals,
+    .blogs,
+    .footer-grid {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .search-bar {
+        align-items: stretch;
+    }
+}
