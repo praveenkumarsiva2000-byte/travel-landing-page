@@ -274,6 +274,8 @@ body {
 
 .slider-nav {
     margin-top: 50px;
+    display: flex;
+    gap: 16px;
 }
 
 .nav-btn {
