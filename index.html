@@ -21,7 +21,7 @@
     <!-- HEADER -->
     <header class="header">
         <div class="container nav">
-            <div class="logo">Trabook</div>
+            <div class="logo"><img src="assests/Logo.png" alt=""></div>
 
             <ul class="menu">
                 <li>Home</li>
@@ -32,7 +32,7 @@
             </ul>
 
             <div class="auth">
-                <a href="#">Login</a>
+                <a href="#" style="color:#fa7436; text-decoration: none;">Login</a>
                 <button class="btn">Sign up</button>
             </div>
         </div>
@@ -43,7 +43,7 @@
         <div class="container hero-grid">
 
             <div class="hero-text">
-                <h1>
+                <h1 class="title">
                     Get started your <br>
                     exciting <span>journey</span> <br>
                     with us.
@@ -69,12 +69,12 @@
                 <h4>Location <i class="fa-solid fa-chevron-down"></i></h4>
                 <p>Where are you going</p>
             </div>
-            <div class="divider"></div>
+
             <div class="search-item">
                 <h4>Date <i class="fa-solid fa-chevron-down"></i></h4>
                 <p>When you will go</p>
             </div>
-            <div class="divider"></div>
+
             <div class="search-item">
                 <h4>Guest <i class="fa-solid fa-chevron-down"></i></h4>
                 <p>Number of guest</p>
@@ -86,24 +86,32 @@
     <!-- THINGS TO DO -->
     <section class="section light">
         <div class="container center">
-            <h2>Things you need <span>to do</span></h2>
-            <p>We ensure that you'll embark on a perfectly planned vacation.</p>
+            <div class="flex">
+                <div>
+                    <h1 class="title">Things you need <span>to do</span></h1>
+                    <p class="section-subtitle">We ensure that you'll embark on a perfectly planned vacation.</p>
+                </div>
+                <div class="bg-element"> <img src="assests/BG element-1.png" alt="">
+                </div>
+            </div>
 
             <div class="cards">
                 <div class="card">
-                    <i class="fa-solid fa-user-plus"></i>
-                    <h3>Sign Up</h3>
-                    <p>Complete all the work associated with planning.</p>
+                    <img src="assests/sign up icon.svg" alt="">
+                    <div class="support">
+                        <h3>Sign Up</h3>
+                        <p>Complete all the work associated with planning.</p>
+                    </div>
                 </div>
 
                 <div class="card">
-                    <i class="fa-solid fa-wallet"></i>
+                    <img src="assests/worth of money icon.svg" alt="">
                     <h3>Worth of Money</h3>
                     <p>Book exclusive deals at the best prices.</p>
                 </div>
 
                 <div class="card">
-                    <i class="fa-solid fa-plane"></i>
+                    <img src="assests/Exciting travel icon.svg" alt="">
                     <h3>Exciting Travel</h3>
                     <p>Explore a wide range of travel experiences.</p>
                 </div>
@@ -114,9 +122,9 @@
     <!-- DEALS -->
     <section class="deals-section">
         <div class="container">
-            <h2 class="section-title">
+            <h1 class="title">
                 Exclusive <span>deals & discounts</span>
-            </h2>
+            </h1>
             <p class="section-subtitle">
                 Discover our fantastic early booking discounts <br />
                 & start planning your journey.
@@ -132,7 +140,10 @@
                             <span class="rating">⭐ 4.8</span>
                         </div>
                         <div class="deal-footer">
-                            <span class="location">📍 Spain</span>
+                            <span class="location">
+                                <img src="assests/Location pin.svg" alt="Location icon" />
+                                Spain
+                            </span>
                             <div class="price">
                                 <del>$950</del>
                                 <span class="offer">$850</span>
@@ -151,7 +162,10 @@
                             <span class="rating">⭐ 4.5</span>
                         </div>
                         <div class="deal-footer">
-                            <span class="location">📍 Italy</span>
+                            <span class="location">
+                                <img src="assests/Location pin.svg" alt="Location icon" />
+                                Italy
+                            </span>
                             <div class="price">
                                 <del>$850</del>
                                 <span class="offer">$750</span>
@@ -169,7 +183,10 @@
                             <span class="rating">⭐ 4.4</span>
                         </div>
                         <div class="deal-footer">
-                            <span class="location">📍 France</span>
+                            <span class="location">
+                                <img src="assests/Location pin.svg" alt="Location icon" />
+                                France
+                            </span>
                             <div class="price">
                                 <del>$699</del>
                                 <span class="offer">$599</span>
@@ -187,7 +204,10 @@
                             <span class="rating">⭐ 4.8</span>
                         </div>
                         <div class="deal-footer">
-                            <span class="location">📍 UK</span>
+                            <span class="location">
+                                <img src="assests/Location pin.svg" alt="Location icon" />
+                                Londan
+                            </span>
                             <div class="price">
                                 <del>$850</del>
                                 <span class="offer">$850</span>
@@ -208,34 +228,47 @@
     <!-- BEST VACATION -->
     <section class="vacation-section">
         <div class="container">
-            <div class="vacation-header">
-                <div>
-                    <h2 class="section-title">
-                        Best <span>vacation plan</span>
-                    </h2>
-                    <p class="section-subtitle">
-                        Plan your perfect vacation with our travel agency. Choose <br />
-                        among hundreds of all-inclusive offers!
-                    </p>
-                </div>
 
-                <div class="slider-nav top">
-                    <button class="nav-btn">←</button>
-                    <button class="nav-btn active">→</button>
-                </div>
+            <!-- Header -->
+            <div class="vacation-header">
+                <div class="container">
+
+        <div class="vacation-header">
+            <!-- TEXT -->
+            <div class="header-content">
+                <h1 class="title">Best <span>vacation plan</span></h1>
+                <p class="section-subtitle">
+                    Plan your perfect vacation with our travel agency.<br>
+                    Choose among hundreds of all-inclusive offers!
+                </p>
             </div>
 
-            <div class="vacation-grid">
+            <!-- SVG -->
+            <div class="bg-element">
+                <img src="assests/BG element-2.png" alt="">
+            </div>
+
+            <!-- NAV -->
+            <div class="slider-controls">
+                <button class="nav-btn">&#8592;</button>
+                <button class="nav-btn active">&#8594;</button>
+            </div>
+        </div>
+            <!-- Cards -->
+            <div class="vacation-cards">
                 <!-- Card 1 -->
                 <div class="vacation-card">
-                    <img src="assests/Rome,Italy.jpg" alt="Rome" />
-                    <div class="vacation-content">
-                        <div class="vacation-title">
-                            <h3>Rome, Italy</h3>
-                            <span class="price">$5,42k</span>
+                    <img src="assests/Rome,Italy.jpg" alt="Rome">
+                    <div class="card-content">
+                        <div class="card-top">
+                            <h4>Rome, Italy</h4>
+                            <span class="price">$5.42k</span>
                         </div>
-                        <div class="vacation-footer">
-                            <span>✈ 10 Days Trip</span>
+                        <div class="card-bottom">
+                            <span class="trip-info">
+                                <img src="assests/Navigation.png" alt="flight icon" class="flight-icon">
+                                10 Days Trip
+                            </span>
                             <span class="rating">⭐ 4.8</span>
                         </div>
                     </div>
@@ -243,47 +276,55 @@
 
                 <!-- Card 2 -->
                 <div class="vacation-card">
-                    <img src="assests/London,UK.jpg" alt="London" />
-                    <div class="vacation-content">
-                        <div class="vacation-title">
-                            <h3>London, UK</h3>
-                            <span class="price">$2,42k</span>
+                    <img src="assests/London,UK.jpg" alt="London">
+                    <div class="card-content">
+                        <div class="card-top">
+                            <h4>London, UK</h4>
+                            <span class="price">$2.42k</span>
                         </div>
-                        <div class="vacation-footer">
-                            <span>✈ 07 Days Trip</span>
+                        <div class="card-bottom">
+                             <span class="trip-info">
+                                <img src="assests/Navigation.png" alt="flight icon" class="flight-icon">
+                                07 Days Trip
+                            </span>
                             <span class="rating">⭐ 4.7</span>
+
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="vacation-card">
-                    <img src="assests/Osaka,Japan.jpg" alt="Osaka" />
-                    <div class="vacation-content">
-                        <div class="vacation-title">
-                            <h3>Osaka, Japan</h3>
-                            <span class="price">$5,42k</span>
+                    <img src="assests/Osaka,Japan.jpg" alt="Osaka">
+                    <div class="card-content">
+                        <div class="card-top">
+                            <h4>Osaka, Japan</h4>
+                            <span class="price">$5.42k</span>
                         </div>
-                        <div class="vacation-footer">
-                            <span>✈ 10 Days Trip</span>
+                        <div class="card-bottom">
+                            <span class="trip-info">
+                                <img src="assests/Navigation.png" alt="flight icon" class="flight-icon">
+                                10 Days Trip
+                            </span>
                             <span class="rating">⭐ 4.8</span>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
+
     <!-- TESTIMONIAL -->
     <section class="testimonial">
         <div class="testimonial-container">
-
             <!-- LEFT CONTENT -->
             <div class="testimonial-left">
-                <h2>
+                <h1 class="title">
                     What people say <br />
                     <span>about us.</span>
-                </h2>
+                </h1>
 
                 <p>
                     Our Clients send us bunch of smiles with our services
@@ -326,9 +367,9 @@
 
     <!-- BLOG -->
     <section class="blog">
-        <h2>
+        <h1 class="title">
             Get update with <span>latest blog</span>
-        </h2>
+        </h1>
 
         <div class="blog-cards">
             <div class="blog-card">
@@ -363,76 +404,77 @@
         </div>
     </section>
 
-   
+    <!-- SUBSCRIBE -->
+    <section class="subscribe">
+        <div class="subscribe-box">
+            <h1 class="title" style="color: white;">
+                Subscribe and get exclusive <br />
+                deals & offer
+            </h1>
+
+            <div class="subscribe-input">
+                <img src="assests/Mail icon.svg" alt="">
+                <input type="email" placeholder="Enter your mail">
+                <button>Subscribe</button>
+            </div>
+
+            <!-- decorative circles -->
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+        </div>
+    </section>
+
     <!-- FOOTER -->
-  <!-- SUBSCRIBE -->
-<section class="subscribe">
-  <div class="subscribe-box">
-    <h2>
-      Subscribe and get exclusive <br />
-      deals & offer
-    </h2>
+    <footer class="footer">
+        <div class="footer-container">
 
-    <div class="subscribe-input">
-      <input type="email" placeholder="Enter your mail">
-      <button>Subscribe</button>
-    </div>
+            <div class="footer-brand">
+                <img src="assests/Logo.png" alt="">
+                <p>
+                    Book your trip in minute, get full
+                    Control for much longer.
+                </p>
 
-    <!-- decorative circles -->
-    <span class="circle"></span>
-    <span class="circle"></span>
-    <span class="circle"></span>
-    <span class="circle"></span>
-  </div>
-</section>
+                <div class="socials">
+                    <span><img src="assests/Facebook Icon.svg" alt=""></span>
+                    <span class="active"><img src="assests/instagram 1.svg" alt=""></span>
+                    <span><img src="assests/Twitter.svg" alt=""></span>
+                </div>
+            </div>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-container">
+            <div class="footer-links">
+                <h4>Company</h4>
+                <a href="#">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Logistic</a>
+                <a href="#">Privacy & Policy</a>
+            </div>
 
-    <div class="footer-brand">
-      <h3>Trabook ✈</h3>
-      <p>
-        Book your trip in minute, get full
-        Control for much longer.
-      </p>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <a href="#">Help/FAQ</a>
+                <a href="#">Press</a>
+                <a href="#">Affilates</a>
+            </div>
 
-      <div class="socials">
-        <span>f</span>
-        <span class="active">◎</span>
-        <span>🐦</span>
-      </div>
-    </div>
+            <div class="footer-links">
+                <h4>More</h4>
+                <a href="#">Press Centre</a>
+                <a href="#">Our Blog</a>
+                <a href="#">Low fare tips</a>
+            </div>
 
-    <div class="footer-links">
-      <h4>Company</h4>
-      <a href="#">About</a>
-      <a href="#">Careers</a>
-      <a href="#">Logistic</a>
-      <a href="#">Privacy & Policy</a>
-    </div>
+        </div>
 
-    <div class="footer-links">
-      <h4>Contact</h4>
-      <a href="#">Help/FAQ</a>
-      <a href="#">Press</a>
-      <a href="#">Affilates</a>
-    </div>
-
-    <div class="footer-links">
-      <h4>More</h4>
-      <a href="#">Press Centre</a>
-      <a href="#">Our Blog</a>
-      <a href="#">Low fare tips</a>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>Copyright, Trabook 2022. All rights reserved.</p>
-    <p>Terms & Conditions</p>
-  </div>
-</footer>
+        <div class="footer-bottom">
+            <p>Copyright, Trabook 2022. All rights reserved.</p>
+            <p>Terms & Conditions</p>
+        </div>
+    </footer>
 
 </body>
 
