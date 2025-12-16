@@ -136,33 +136,20 @@ body {
 }
 
 /* THINGS TO DO */
-.flex {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    align-items: center;
-    margin-bottom: 40px;
-    margin-left: 100px;
-    margin-right: auto;
-    justify-content: center;
+.section {
+    padding: 60px 0;
+    background: #f8f9fc;
 }
 
-.bg-element img {
-    width: 80px;
-    opacity: 0.6;
+/* HEADER WRAPPER */
+.things-header {
+    position: relative;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
 }
 
-.things-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.things-content {
-    max-width: 600px;
-}
-
+/* TITLE */
 .title {
     font-size: 42px;
     font-weight: 700;
@@ -174,95 +161,89 @@ body {
     color: #fa7436;
 }
 
+/* SUBTITLE */
 .section-subtitle {
     font-size: 16px;
     color: #777;
     line-height: 1.6;
 }
 
+/* SVG POSITION */
+.bg-element {
+    position: absolute;
+    top: -10px;
+    right: -80px;
+}
+
 .bg-element img {
-    width: 120px;
+    width: 100px;
     opacity: 0.6;
 }
-
-
-.section {
-    padding: 80px 0;
-}
-
+/* CARDS WRAPPER */
 .cards {
-    display: flex;
+    max-width: 1160px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
 
+/* CARD */
 .card {
     background: #ffffff;
     border-radius: 20px;
     padding: 32px 28px;
-    width: 320px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
     position: relative;
     overflow: hidden;
-    outline: 1px solid rgba(42, 33, 33, 0.078);
 }
 
-/* soft curved background line */
+/* CURVED BACKGROUND LINE */
 .card::after {
     content: "";
     position: absolute;
     right: -60px;
-    top: 80px;
+    top: 70px;
     width: 320px;
     height: 200px;
-    background: url("") no-repeat;
+    background: url("assests/curve-line.png") no-repeat;
     background-size: contain;
     opacity: 0.2;
     pointer-events: none;
 }
 
-/* icon */
+/* ICON */
 .card img {
     width: 42px;
     height: 42px;
     margin-bottom: 20px;
 }
 
-/* content */
-.support h3 {
-    font-size: 28px;
+/* TEXT */
+.card h3 {
+    font-size: 20px;
     font-weight: 700;
     color: #222;
-    margin: 0 0 14px 0;
+    margin-bottom: 12px;
 }
 
-.support p {
-    font-size: 16px;
+.card p {
+    font-size: 15px;
     color: #777;
     line-height: 1.6;
-    margin: 0;
+}
+@media (max-width: 992px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-
-/* CARDS */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 40px;
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
 }
 
-.card {
-    padding: 30px;
-    text-align: left;
-    background: #fff;
-    border-radius: 12px;
-}
-
-.card i {
-    font-size: 32px;
-    color: var(--orange);
-    margin-bottom: 15px;
-}
 
 /* DEALS */
 .deals-section {
@@ -309,7 +290,7 @@ body {
     position: relative;
 }
 
-.deal-card.active{
+.deal-card.active {
     background: #fff;
     border-radius: 16px;
     overflow: hidden;
@@ -358,16 +339,16 @@ body {
 }
 
 .location {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 14px;
-  color: #777;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #777;
 }
 
 .location img {
-  width: 16px;
-  height: 20px;
+    width: 16px;
+    height: 20px;
 }
 
 .deal-footer {
@@ -505,7 +486,7 @@ body {
     background: #fff;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 }
 
 .vacation-card img {
@@ -540,17 +521,19 @@ body {
     margin-top: 10px;
     font-size: 14px;
     color: #777;
+
     .trip-info {
-    display: flex;
-    align-items: center;
-    gap: 6px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .flight-icon {
+        width: 16px;
+        height: 16px;
+    }
 }
 
-.flight-icon {
-    width: 16px;
-    height: 16px;
-}
-}
 .rating {
     font-size: 14px;
     color: #666;
@@ -579,7 +562,7 @@ body {
 }
 
 .testimonial-container {
-    max-width: 1130px;
+    max-width: 1200px;
     height: 300px;
     max-height: 500px;
     margin: auto;
@@ -588,7 +571,8 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    flex-wrap: wrap; /* IMPORTANT */
+    flex-wrap: wrap;
+    /* IMPORTANT */
 }
 
 /* LEFT */
@@ -655,7 +639,8 @@ body {
 
 /* BACK CARD */
 .testimonial-card.back {
-    top: 0px;       /* move to top */
+    top: 0px;
+    /* move to top */
     left: 0;
     opacity: 0.35;
     z-index: 1;
@@ -663,7 +648,8 @@ body {
 
 /* FRONT CARD */
 .testimonial-card.front {
-    bottom: -40px;      /* move to bottom */
+    bottom: -40px;
+    /* move to bottom */
     right: 30px;
     z-index: 2;
 }
@@ -674,7 +660,8 @@ body {
     height: 56px;
     border-radius: 50%;
     position: absolute;
-    top: -28px;  /* moved avatar to bottom of card */
+    top: -28px;
+    /* moved avatar to bottom of card */
     left: -28px;
     border: 4px solid #fff;
     background: #fff;
@@ -698,6 +685,7 @@ body {
     font-size: 14px;
     color: #777;
 }
+
 /* RESPONSIVE */
 
 @media (max-width: 1024px) {
@@ -724,7 +712,8 @@ body {
     }
 
     .testimonial-card.back {
-        display: none; /* hide background card on mobile */
+        display: none;
+        /* hide background card on mobile */
     }
 
     .avatar {
@@ -766,9 +755,11 @@ body {
 }
 
 .blog-cards {
-    max-width: 1130px;
-    margin: 0 auto;       /* centers cards */
-    padding: 0 16px;      /* optional: mobile spacing */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* centers cards */
+    padding: 0 16px;
+    /* optional: mobile spacing */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -821,7 +812,7 @@ body {
 }
 
 .subscribe-box {
-    max-width: 1100px;
+    max-width: 1150px;
     margin: auto;
     background: #fa7436;
     border-radius: 20px;
@@ -832,7 +823,7 @@ body {
 }
 
 .subscribe-box img {
-   padding-left: 10px;
+    padding-left: 10px;
 }
 
 .subscribe-box h2 {
@@ -905,7 +896,7 @@ body {
 }
 
 .footer-container {
-    max-width: 1100px;
+    max-width: 1180px;
     margin: auto;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -962,7 +953,7 @@ body {
 /* BOTTOM */
 .footer-bottom {
     max-width: 1130px;
-    margin: 70px 0 auto 70px;
+    margin: 70px 0 0 70px;
     border-top: 1px solid #ddd;
     padding-top: 30px;
     display: flex;
