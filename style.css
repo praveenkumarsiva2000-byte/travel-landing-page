@@ -398,7 +398,7 @@ body {
 
 /* VACATION PLAN */
 .vacation-section {
-    padding: 100px 0;
+    padding: 0px 0;
     background: #fffaf7;
 }
 
@@ -757,9 +757,7 @@ body {
 .blog-cards {
     max-width: 1200px;
     margin: 0 auto;
-    /* centers cards */
     padding: 0 16px;
-    /* optional: mobile spacing */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -803,6 +801,25 @@ body {
 .blog-dots span.active {
     background: #fa7436;
 }
+
+/* TABLET */
+@media (max-width: 992px) {
+    .blog-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE — ONLY ONE CARD */
+@media (max-width: 600px) {
+    .blog-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .blog {
+        padding: 80px 0;
+    }
+}
+
 
 /* SUBSCRIBE */
 
@@ -898,11 +915,13 @@ body {
 .footer-container {
     max-width: 1180px;
     margin: auto;
+    padding: 0 16px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 40px;
 }
 
+/* BRAND */
 .footer-brand h3 {
     font-size: 22px;
     font-weight: 700;
@@ -910,11 +929,12 @@ body {
 
 .footer-brand p {
     margin: 20px 0;
-    max-width: 250px;
+    max-width: 260px;
     color: #666;
     line-height: 1.6;
 }
 
+/* SOCIAL */
 .socials {
     display: flex;
     gap: 16px;
@@ -937,6 +957,7 @@ body {
     color: #fff;
 }
 
+/* LINKS */
 .footer-links h4 {
     margin-bottom: 20px;
     font-size: 18px;
@@ -950,37 +971,46 @@ body {
     font-size: 15px;
 }
 
-/* BOTTOM */
+/* FOOTER BOTTOM */
 .footer-bottom {
-    max-width: 1130px;
-    margin: 70px 0 0 70px;
+    max-width: 1180px;
+    margin: 60px auto 0;
+    padding: 30px 16px 0;
     border-top: 1px solid #ddd;
-    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     color: #888;
     font-size: 14px;
 }
 
+/* TABLET */
+@media (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+}
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-
-    .hero-grid,
-    .search-bar,
-    .cards,
-    .deals,
-    .blogs,
-    .footer-grid {
+/* MOBILE */
+@media (max-width: 600px) {
+    .footer-container {
         grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-brand p {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .footer-bottom {
         flex-direction: column;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .search-bar {
-        align-items: stretch;
+        gap: 16px;
+        text-align: center;
     }
 }
