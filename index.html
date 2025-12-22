@@ -18,11 +18,24 @@
 
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container nav">
-            <div class="logo"><img src="assests/Logo.png" alt=""></div>
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <nav class="nav">
 
+            <!-- Hamburger (mobile only) -->
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Logo -->
+            <div class="logo">
+                <img src="assests/Logo.png" alt="Trabook">
+            </div>
+
+            <!-- Menu -->
             <ul class="menu">
                 <li>Home</li>
                 <li>About</li>
@@ -31,36 +44,39 @@
                 <li>Blog</li>
             </ul>
 
+            <!-- Auth -->
             <div class="auth">
-                <a href="#" style="color:#fa7436; text-decoration: none;">Login</a>
+                <a href="#" class="login">Login</a>
                 <button class="btn">Sign up</button>
             </div>
+
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container hero-grid">
+
+        <div class="hero-text">
+            <h1 class="title">
+                Get started your <br>
+                exciting <span>journey</span> <br>
+                with us.
+            </h1>
+            <p>
+                A team of experienced tourism professionals will provide you
+                with the best advice and tips for your desire place.
+            </p>
+            <button class="btn-outline">Discover Now</button>
         </div>
-    </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container hero-grid">
-
-            <div class="hero-text">
-                <h1 class="title">
-                    Get started your <br>
-                    exciting <span>journey</span> <br>
-                    with us.
-                </h1>
-                <p>
-                    A team of experienced tourism professionals will provide you
-                    with the best advice and tips for your desire place.
-                </p>
-                <button class="btn-outline">Discover Now</button>
-            </div>
-
-            <div class="hero-img">
-                <img src="assests/hero.png" alt="Traveler">
-            </div>
-
+        <div class="hero-img">
+            <img src="assests/hero.png" alt="Traveler">
         </div>
-    </section>
+
+    </div>
+</section>
 
     <!-- SEARCH BAR -->
     <section class="search-wrapper">
@@ -416,6 +432,11 @@
                 Subscribe and get exclusive <br />
                 deals & offer
             </h1>
+            <!-- SVG -->
+                        <div class="bg-element">
+                            <img src="assests/BG element-1.png" alt="">
+                        </div>
+
             <div class="subscribe-input">
                 <img src="assests/Mail icon.svg" alt="">
                 <input type="email" placeholder="Enter your mail">
